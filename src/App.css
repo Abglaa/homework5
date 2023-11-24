@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: gray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aqua;
+}
+#root {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.add_todo{
+    height: 40px;
+    width: 500px;
+    display: flex;
+    margin-top: 120px;
+}
+.add_todo input {
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: rgb(27, 11, 208);
+}
+.add_todo button {
+    width: 100px;
+    height: 35px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background-color: rgb(0, 255, 81);
+    color: black;
+    font-size: 18px;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+    display: flex;
+    align-items: center;
+    justify-content: ;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label button {
+    width: 80px;
+    height: 30px;
+    border: none;
+    margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input {
+    font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.delete {
+    background-color: red;
+    color: black;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit {
+    background-color: green;
+    color: black;
+}
+.save {
+    background-color: rgb(0, 110, 255);
+    color: white;
 }
